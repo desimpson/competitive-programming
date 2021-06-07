@@ -129,4 +129,7 @@ dmypy.json
 .pyre/
 
 # PyCharm
+.idea/competitive-programming.iml
+.idea/misc.xml
 .idea/
+
