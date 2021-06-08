@@ -22,8 +22,9 @@ class Graph:
 
     def dfs_helper(self, v, visited):
         visited.add(v)
-        [self.dfs_helper(neighbour, visited) for neighbour in self.graph[v]
-         if neighbour not in visited]
+        for neighbour in self.graph[v]:
+            if neighbour not in visited:
+                self.dfs_helper(neighbour, visited)
 
 
 def main():
